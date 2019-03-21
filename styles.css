@@ -1,0 +1,397 @@
+:root {
+    --infobar-text-color: white;
+    --main-text-color: #2c2c35;
+}
+br{
+    line-height: 150%;
+}
+
+html{
+    font-size: 7px;
+    /* font-size: 10px; */
+}
+
+
+.infobar{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    background: url("photo/wallpaper.png") no-repeat;
+    background-size: 100% 100%;
+}
+@media only screen and (min-width: 1024px) {
+    html{
+        font-size: 10px;
+    }
+    .infobar{
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        background: url("photo/wallpaper@2x.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    .infobar{
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        background: url("photo/wallpaper@3x.png") no-repeat;
+        background-size: 100% 100%;;
+    }
+}
+
+
+.infobar__user{
+    position: relative;
+    left: 9%;
+    top: 4%;
+}
+.infobar__user__pic{
+    float: left;
+    max-width: 9%;
+    max-height: 7%;
+    margin-right: 3%; 
+    border-radius: 50%;
+}
+
+.infobar__user__info{
+    margin-top: 1.5%;
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--infobar-text-color);
+}
+.infobar__user__line{
+    float:left;
+    margin-right: 3%;
+    width: 19px;
+    border: solid 1px var(--infobar-text-color);
+}
+
+.infobar__links{
+    position: absolute;
+    left: 80%;
+    top: 89%;
+}
+
+.infobar__links__link{
+    display: inline-block;
+    transition: transform .3s; /* Animation */
+    max-height: 2.3rem;
+    margin-left: 1vw;
+}
+.infobar__links__link:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+
+
+@media only screen and (min-height: 600px) {
+    .infobar__links__link{
+        display: block;
+        margin-bottom: 100%;
+        height: auto;
+        max-height: 2.4rem;
+        width: 100%;
+        margin-left: auto
+    }
+    .infobar__links{
+        position: absolute;
+        left: 87%;
+        top: 82%;
+    }
+}
+
+.infobar__website{
+    transition: transform .3s; /* Animation */
+    text-decoration: none;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    font-family: Helvetica;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--infobar-text-color);
+}
+.infobar__website:hover{
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3); 
+}
+.infobar__website__arrow{
+    width: 1.5rem;
+    height: 0.9rem;
+}
+
+@media only screen and (min-height: 600px) {
+    .infobar__website{
+        top: 93%;
+    }
+}
+
+
+
+.main{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    color: var(--main-text-color);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Geomanist";
+    src: url("fonts/geomanist-regular.ttf") format("truetype");
+}
+
+.main__section__headline1{
+    font-family: Geomanist;
+    font-weight: normal;
+    line-height: 1.21;
+    font-size: 4.8rem;
+    width: 80%
+}
+.main__section_secondary-font{
+    font-size: 1.6rem;
+}
+.main__article{
+    margin-top: 38vh;
+}
+.main__section__headline2{
+    font-family: Geomanist;
+    font-weight: normal;
+    line-height: 1.21;
+    font-size: 3.6rem;
+}
+.main__section__headline3{
+    font-family: Geomanist;
+    font-weight: normal;
+    line-height: 1.21;
+    font-size: 3.0rem;
+}
+.main__section__headline4{
+    font-family: Geomanist;
+    font-weight: normal;
+    line-height: 1.21;
+    font-size: 2.4rem;
+}
+.main__section__cite{
+    margin: 5%;
+    font-family: Roboto;
+    font-size: 2.0rem;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+}
+.main__image-mlake{
+    width: 40%;
+    height: auto;
+}
+.main__image-forest{
+    width: 40%;
+    height: auto;
+}
+.main__figure-lake{
+    width: 100%;
+    margin: 0 auto;
+}
+.main__figure-lake__image{
+    width: 100%;
+    height: auto;
+}
+.main__image_float-left{
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+.main__image_float-right{
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.main__figure-lake__caption{
+    margin-top: 1%;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ababab; 
+}
+.main__figure-lake__line{
+    border: 1px solid #ababab;
+    width: 80%; 
+    margin-bottom: 5%;
+}
+.main__section{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    font-family: Helvetica;
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #2c2c35;
+    width: 75%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.main__formbox{
+    position: relative;
+    margin-top:4%;
+    max-width: 100%;
+    padding-top: 6%;
+    padding-bottom: 6%;;
+    box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, rgba(12, 12, 24, 0),
+    rgba(155, 155, 231, 0) 70%, rgba(5, 5, 10, 0.12));
+}
+.main__formbox__author-info{
+    margin-left: 23%;
+}
+.main__formbox__author-photo{
+    left: 7%;
+    margin-top: 1%;
+    position: absolute;
+    width: 12%;
+    height: auto;
+    border-radius: 50%;
+}
+.main__formbox__author-info__name{
+    width: 50%;
+    font-family: Helvetica;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.main__formbox__author-info__bio{
+    width: 90%;
+    font-family: Helvetica;
+    font-size: 1.4rem;  
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+}
+.main__formbox__form{
+    display:flex;
+    width: 91%;
+    flex-direction:row;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #dfe2e6;
+}
+.main__formbox__input{
+    flex-grow:2;
+    width: 65%;
+    border: none;
+    height: 3.3rem;
+    font-family: Helvetica;
+    font-size: 1.5rem;
+    background-color: var(--infobar-text-color);
+    background: url("icons/mail.svg") no-repeat scroll 0.7rem 0.7rem;
+    padding-left: 4.0rem;
+}
+.main__formbox__share{
+    position: absolute;
+    top: -2vw;
+    left: 85%;
+    border: none;
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    background-color: #5a5aff;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.main__formbox__button{
+    width:15%;
+    min-width: 10rem;
+    height: 3.5rem;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #29b1cc;
+    text-align: center;
+    text-decoration: none;
+    color: var(--infobar-text-color);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+.main__formbox__button:hover{
+    background-color: #1f8094;
+}
+.main__formbox__share:hover{
+    background-color: #3737a3;
+}
+
+.main__article__scroll-down {
+	position: absolute;
+    left: 45%;
+    top: 90%;
+	bottom: 10px;
+	display: block;
+	font-size: 20px;
+	text-shadow: 0;
+    width: 5%;
+    height: auto;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    fade_move_down 2s ease-in-out infinite;
+    animation:         fade_move_down 2s ease-in-out infinite;
+    
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) ; opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) ; opacity: 0; }
+}
+@keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) ; opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) ; opacity: 0; }
+}
