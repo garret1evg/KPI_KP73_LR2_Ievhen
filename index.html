@@ -11,28 +11,28 @@
 <body>
     <aside class="infobar">
         <div class="infobar__user">
-            <img class="infobar__user__pic" 
+            <img class="user__pic" 
             srcset="photo/author.jpg 512w, 
             photo/author@2x.jpg 1024w, 
             photo/author@3x.jpg 2048w" alt="Profile pic"/>
-            <span class="infobar__user__info">Matthew Schwartz<br/><hr class="infobar__user__line"/> Blog</span>
+            <span class="user__info">Matthew Schwartz<br/>— Blog</span>
         </div>
         <div class="infobar__links">
-            <img class="infobar__links__link" src="icons/icon-facebook.svg" alt="Facebook link"/>
-            <img class="infobar__links__link" src="icons/icon-instagram.svg" alt="Instagram link"/>
-            <img class="infobar__links__link" src="icons/icon-linkedIn.svg" alt="LinkedIn link"/>
+            <a href="http://facebook.com"><img class="infobar__links__link" src="icons/icon-facebook.svg" alt="Facebook link"/></a>
+            <a href="http://instagram.com"><img class="infobar__links__link" src="icons/icon-instagram.svg" alt="Instagram link"/></a>
+            <a href="http://linkedin.com"><img class="infobar__links__link" src="icons/icon-linkedIn.svg" alt="LinkedIn link"/></a>
         </div>
         <a href="https://benbotshop.herokuapp.com" class="infobar__website"><img class="infobar__website__arrow" src="icons/arrow-left.svg" alt="Facebook link"/> Go to my website</a>
     </aside>
     <main class="main">
-        <header class="main__article">
+        <header class="main__header">
             <section class="main__section">
                 <h1 class="main__section__headline1">I Create Website Design, that Make Sense.</h1>
                 <p>When a Web Design Template Makes Sense. In general, 
                 you may want to select a pre-configured web design template, 
                 when you're in the following situations…</p>
             </section>
-            <a  href = "#content" class ="main__article__scroll-down_link"><img class="main__article__scroll-down" src="icons/arrow-down.svg"></a>
+            <a  href = "#content" class ="scroll-down_link"><img class="scroll-down" src="icons/arrow-down.svg"></a>
         </header>
         <article class="main__article" id="content">
             <section class="main__section">
@@ -139,7 +139,7 @@
             </div>
             
         </article>
-        <footer class="main__article">
+        <footer>
             <section class="main__formbox">
                 <button class="main__formbox__share"><img src="icons/share.svg" alt="Share button"></button>
                 <img class="main__formbox__author-photo" 
